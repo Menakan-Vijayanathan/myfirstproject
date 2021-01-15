@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show Trackr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="com.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand btn btn-warning" href="homepage.html" >Show<strong>Trackr</strong></a>&nbsp;
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home </a>
+          </li>&nbsp;&nbsp;
+          <li class="nav-item active">
+            <a class="nav-link " href="add.html">Add</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class='fas fa-user-alt'></i>&nbsp;Login</a>
+              </li>&nbsp;&nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html"><i class='fas fa-sign-in-alt'></i>&nbsp;Sign Up</a>
+              </li>
+        </ul>
+      </div>
+    </nav><br><br>
+    <div class="container">
+          <div class="card">
+            <div class="card-header"><strong>ADD TV SHOW</strong></div>
+            <div class="card-body">
+              <form >
+                  <div class="form-group">
+                    <label for="name"><strong>TV Show Name</strong></label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter TV Show Name" name="name">
+                  </div>
+                  <div class="form-group">
+                      <label for="type"><strong>Select TV show type</strong></label>
+                      <select name="cars" class="custom-select mb-3" id="type">
+                        <option value="Comedy">Comedy</option>
+                        <option value="Action" selected>Action</option>
+                        <option value="Love">Love</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Factual">Factual</option>
+                        <option value="TV Dramas">TV Dramas</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Music">Music</option>
+                      </select>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Upload your file here</label>
+                  </div><br><br>
+                  <button type="submit" class="btn btn-primary">ADD</button>
+                </form>
+            </div>
+          </div>
+    </div>
+  </body>
+</html>
